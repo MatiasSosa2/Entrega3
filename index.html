@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elite Gym</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header y Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg shadow-sm py-2 fixed-top custom-navbar">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+          <img class="foto-logo me-2" src="assets/logo.jpg" alt="Logo" style="height: 45px;" /><h4 class="mb-0 fw-bold">ELITE GYM</h4>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="menuPrincipal">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold text-white" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold text-white" href="sections/programas.html">Programas</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold text-white" href="sections/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold text-white" href="sections/planes.html">Planes</a></li>
+            <li class="nav-item"><a class="nav-link text-uppercase fw-semibold text-white" href="sections/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section d-flex align-items-center justify-content-center text-center position-relative">
+    <div class="hero-overlay"></div>
+       <div class="container hero-content">
+          <h1 class="display-4 fw-bold">PARA SER PARTE DEL 1% DEBES HACER LO QUE EL 99% NO HACE</h1>
+          <p class="lead mt-3"><strong>ELITE GYM</strong> - Entrena con los mejores y alcanza tu máximo potencial.</p>
+          <a href="sections/programas.html" class="btn btn-celeste btn-lg mt-4 text-uppercase fw-semibold">Ver Programas</a>
+      </div>
+    </section>
+
+    <!-- Programas -->
+    <section id="programas" class="py-5 seccion-fijada">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <img src="assets/programa.jpg" alt="Programas" class="img-fluid shadow rounded-4" />
+          </div>
+          <div class="col-md-6 text-center text-md-start">
+            <h2 class="fw-bold mb-3">Nuestros Programas</h2>
+            <p class="fs-5">Ofrecemos rutinas personalizadas, clases grupales y desafíos mensuales para mantenerte motivado. Accede desde cualquier dispositivo, en cualquier lugar.</p>
+            <ul class="list-unstyled fs-5">
+              <li><i class="bi bi-check-circle-fill text-celeste me-2"></i> Entrenamiento Personalizado</li>
+              <li><i class="bi bi-check-circle-fill text-celeste me-2"></i> Clases Grupales Interactivas</li>
+              <li><i class="bi bi-check-circle-fill text-celeste me-2"></i> Desafíos y Competencias Mensuales</li>
+              <li><i class="bi bi-check-circle-fill text-celeste me-2"></i> Soporte y Seguimiento Profesional</li>
+            </ul>
+            <a href="sections/planes.html" class="btn btn-celeste mt-3 text-uppercase fw-semibold">Ver Planes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sedes con Mapa -->
+    <section id="sedes" class="py-5 seccion-fijada bg-light">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+            <h2 class="fw-bold mb-3">Nuestras Sedes</h2>
+            <p class="fs-5">Contamos con centros de entrenamiento en varias ciudades. Busca el más cercano y entrena donde te sientas mejor.</p>
+          </div>
+          <div class="col-md-6">
+            <div class="ratio ratio-16x9 rounded-4 shadow overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.957377783948!2d-58.44469292351979!3d-34.630120959683096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6eddb342a1%3A0xe68f1df82cbf9ea2!2sGimnasio%20Elite!5e0!3m2!1ses!2sar!4v1717776741826!5m2!1ses!2sar"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section id="beneficios" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Beneficios Exclusivos</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 shadow rounded-4 bg-white h-100">
+              <i class="bi bi-heart-pulse display-5 text-celeste"></i>
+              <h5 class="mt-3">Salud y Bienestar</h5>
+              <p>Mejora tu condición física, reduce el estrés y aumenta tu energía diaria.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 shadow rounded-4 bg-white h-100">
+              <i class="bi bi-people-fill display-5 text-celeste"></i>
+              <h5 class="mt-3">Comunidad</h5>
+              <p>Forma parte de una comunidad motivadora y llena de energía positiva.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 shadow rounded-4 bg-white h-100">
+              <i class="bi bi-trophy-fill display-5 text-celeste"></i>
+              <h5 class="mt-3">Resultados Garantizados</h5>
+              <p>Seguimiento personalizado para alcanzar tus metas en el menor tiempo posible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Servicios</h2>
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <div class="card shadow border-0 rounded-4">
+              <div class="card-body">
+                <i class="bi bi-calendar-check-fill display-4 text-celeste mb-3"></i>
+                <h5 class="card-title fw-semibold">Clases Personalizadas</h5>
+                <p class="card-text">Programas adaptados a tus necesidades y objetivos específicos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow border-0 rounded-4">
+              <div class="card-body">
+                <i class="bi bi-lightning-fill display-4 text-celeste mb-3"></i>
+                <h5 class="card-title fw-semibold">Entrenamiento Funcional</h5>
+                <p class="card-text">Mejora tu fuerza, resistencia y movilidad con técnicas modernas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow border-0 rounded-4">
+              <div class="card-body">
+                <i class="bi bi-egg-fried display-4 text-celeste mb-3"></i>
+                <h5 class="card-title fw-semibold">Asesoría Nutricional</h5>
+                <p class="card-text">Planes alimenticios para complementar tu entrenamiento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="bg-black text-white text-center py-3">
+    <p class="mb-6 mt-6">&copy; 2025 Elite Gym. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
