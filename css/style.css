@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.btn-celeste {
+.btn-outline-celeste, .btn-celeste {
   border: none;
   padding: 0.8rem 1.8rem;
   font-weight: 600;
@@ -67,7 +67,7 @@ a:hover {
 }
 .navbar .navbar-collapse .nav-link:hover {
   color: #00bfff;
-  background-color: rgb(27.6923076923, 96.9230769231, 142.3076923077);
+  background-color: #247eb9;
   border-radius: 10px;
 }
 .navbar .foto-logo {
@@ -118,6 +118,15 @@ a:hover {
   color: #fff;
 }
 
+.btn-outline-celeste {
+  background-color: #121212;
+  color: #fff;
+}
+.btn-outline-celeste:hover {
+  background-color: #247eb9;
+  color: #121212;
+}
+
 section {
   padding: 3rem 0;
 }
@@ -142,7 +151,7 @@ h2 {
 
 .list-unstyled li {
   margin-bottom: 0.5rem;
-  color: black;
+  color: #222;
 }
 .list-unstyled li i {
   color: #00bfff;
@@ -285,7 +294,7 @@ form button {
 }
 
 #programas-categorias .categoria-box {
-  background-color: rgb(5.25, 5.25, 5.25);
+  background-color: #121212;
   transition: box-shadow, transform 0.3s ease;
 }
 #programas-categorias .categoria-box:hover {
@@ -318,6 +327,38 @@ form button {
   position: relative;
   background: url("../assets/fondo3.jpg") no-repeat center center/cover;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8f9fa;
+  text-align: center;
+}
+#inicio3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+#inicio3 .container {
+  position: relative;
+  z-index: 2;
+}
+#inicio3 h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #00bfff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+#inicio3 p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  color: #f8f9fa;
 }
 
 #planes-combinado {

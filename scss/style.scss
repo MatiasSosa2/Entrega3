@@ -117,7 +117,7 @@ a {
 
       &:hover {
         color: $color-celeste;
-        background-color: darken($color-blue-primary, 10%);
+        background-color: $color-blue-primary;
         border-radius: 10px;
       }
     }
@@ -173,6 +173,16 @@ a {
   }
 }
 
+.btn-outline-celeste {
+  @extend %btn-base;
+  background-color: $color-bg-dark;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-blue-primary;
+    color: $color-bg-dark;
+  }
+}
 // Secciones alternas
 section {
   padding: 3rem 0;
@@ -213,7 +223,7 @@ h2 {
 .list-unstyled {
   li {
     margin-bottom: 0.5rem;
-    color: darken($color-text-dark, 30%);
+    color: $color-text-dark;
 
     i {
       color: $color-celeste;
@@ -378,7 +388,7 @@ form {
 
 #programas-categorias {
   .categoria-box {
-    background-color: darken($color-bg-dark, 5%);
+    background-color: $color-bg-dark;
     @include transition(box-shadow, transform);
 
     &:hover {
@@ -415,12 +425,42 @@ form {
 
 
 
-
 #inicio3 {
   position: relative;
   background: url('../assets/fondo3.jpg') no-repeat center center/cover;
   height: 100vh;
- }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-bg-light; // supongo que es un color claro para que contraste con fondo oscuro
+  text-align: center;
+
+  &::before {
+    @include overlay($color-overlay-black);
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $color-celeste; // para que el texto tenga el color celeste que mencionaste
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    color: $color-bg-light;
+  }
+}
+
+
 
  #planes-combinado {
   position: relative;
